@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"
+        media="screen,projection" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/green_leaf_recycle_sign-PhotoRoom.png-PhotoRoom.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/green_leaf_recycle_sign-PhotoRoom.png-PhotoRoom.ico"
+        type="image/x-icon">
+    <title>Natsol</title>
+    <style>
+        .select-wrapper input.select-dropdown,
+        .select-dropdown.dropdown-trigger {
+            color: white !important;
+        }
+
+        .select-wrapper .caret {
+            fill: rgba(255, 255, 255, 0.87)
+        }
+
+        select:disabled {
+            color: rgba(255, 255, 255, 0.87);
+        }
+
+        .select-wrapper.disabled+label {
+            color: rgba(255, 255, 255, 0.87);
+        }
+
+        .select-wrapper.disabled .caret {
+            fill: rgba(255, 255, 255, 0.87);
+        }
+
+        .select-wrapper input.select-dropdown:disabled {
+            color: rgba(255, 255, 255, 0.87);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m5 l4 lx3">
+                    <a href=" https://chucky0017.github.io/natsol.github.io/Pagina-Natsol/" target="_blank">
+                        <h1 class="green-text">Natsol</h1>
+                    </a>
+                </div>
+                <div class="col s12 m7 l8 lx9">
+                    <h5 class="white-text">
+                        Transforma Tu Empresa con Nuestros Servicios de Consultoría en Sostenibilidad Ambiental
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l6 lx6">
+                    <h2>Hablemos sobre tu viaje a la sostenibilidad</h2>
+                    <p>Contáctanos para una Consulta Gratuita. Estamos aquí para ayudarte a implementar prácticas
+                        sostenibles y a hacer del mundo un lugar mejor.</p>
+                </div>
+                <div class="col s12 m12 l6 lx6">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <div class="card grey darken-4">
+                                <div class="card-content">
+                                    <span class="card-title white-text">Contactanos</span>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="row">
+                                                <form id="formMsg">
+                                                    <div class="input-field col s6">
+                                                        <input id="inputName" name="inputName" type="text"
+                                                            class="validate white-text" autocomplete="off" required>
+                                                        <label for="inputName">Nombre</label>
+                                                    </div>
+                                                    <div class="input-field col s6">
+                                                        <input id="inputLastName" name="inputLastName" type="text"
+                                                            class="validate white-text" autocomplete="off" required>
+                                                        <label for="inputLastName">Apellido</label>
+                                                    </div>
+                                                    <div class="input-field col s12">
+                                                        <input id="inputEmail" name="inputEmail" type="email"
+                                                            class="validate white-text" autocomplete="off" required>
+                                                        <label for="inputEmail">Correo electrónico</label>
+                                                        <span class="helper-text white-text"
+                                                            data-error="Correo no valido"
+                                                            data-success="Correo valido"></span>
+                                                    </div>
+                                                    <div class="input-field col s4">
+                                                        <select id="inputCountry" name="inputCountry" required>
+                                                            <option value="+54">Argentina (+54)
+                                                            </option>
+                                                            <option value="+55">Brasil (+55)</option>
+                                                            <option value="+56">Chile (+56)</option>
+                                                            <option value="+57">Colombia (+57)
+                                                            </option>
+                                                            <option value="+52">México (+52)</option>
+                                                            <option value="+51" selected>Perú (+51)</option>
+                                                            <option value="+598">Uruguay (+598)
+                                                            </option>
+                                                        </select>
+                                                        <label for="inputCountry">Código de País</label>
+                                                    </div>
+                                                    <div class="input-field col s8">
+                                                        <input id="inputNumberPhone" name="inputNumberPhone" type="tel"
+                                                            class="validate white-text" autocomplete="off" required>
+                                                        <label for="inputNumberPhone">Número de teléfono</label>
+                                                    </div>
+                                                    <div class="input-field col s12">
+                                                        <textarea id="txaMessage" name="txaMessage"
+                                                            class="materialize-textarea white-text" autocomplete="off"
+                                                            required></textarea>
+                                                        <label for="txaMessage">Mensaje</label>
+                                                    </div>
+                                                    <div class="col s4 offset-s8">
+                                                        <button id="btnSendMsg"
+                                                            class="btn waves-effect waves-light green darken-1"
+                                                            type="submit">Enviar
+                                                            <i class="material-icons right">send</i>
+                                                        </button>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="green lighten-5">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l6 lx6">
+                    <h2>Tu Socio Confiable en Sostenibilidad Ambiental</h2>
+                    <p>Creamos Estrategias Personalizadas para un Mundo Más Verde. NATSOL Consulting se dedica a guiar a
+                        empresas y organizaciones hacia la sostenibilidad ambiental, proporcionando soluciones de
+                        consultoría enfocadas en el cuidado del ambiente.</p>
+                </div>
+                <div class="col s12 m12 l6 lx6">
+                    <img width="auto" src="assets/images/ecology.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="light-green lighten-5">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l6 lx6">
+                    <img width="auto" src="assets/images/sostenibilidad.svg">
+                </div>
+                <div class="col s12 m12 l6 lx6">
+                    <h2>Expertos en Ambiente, Consultoría y Soluciones Ecológicas</h2>
+                    <p>Innovamos para Solucionar Desafíos Ambientales Únicos. Descubre cómo NATSOL ha ayudado a diversas
+                        empresas a reducir su huella de carbono y a implementar prácticas sostenibles, mejorando su
+                        reputación y eficiencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lime lighten-5">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l6 lx6">
+                    <h2>Consultoría Personalizada para Empresas Comprometidas</h2>
+                    <p>Desarrollo de Estrategias, Implementación y Seguimiento. Explora nuestros servicios detallados,
+                        desde
+                        evaluaciones de impacto ambiental hasta la integración de tecnologías eco-amigables, diseñados
+                        para
+                        adaptarse a las necesidades únicas de tu empresa.</p>
+                </div>
+                <div class="col s12 m12 l6 lx6">
+                    <img width="auto" src="assets/images/consultoria.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Historias de Éxito de Empresas Sostenibles</h2>
+                    <p>Escucha Cómo Ayudamos a Empresas a Alcanzar la Sostenibilidad. Lee los testimonios reales de
+                        empresas que han transformado sus prácticas gracias a NATSOL.</p>
+                </div>
+                <div class="col-md-12">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="assets/images/1.jpeg">
+                                <div class="caption center-align">
+                                    <h3>GreenTech Innovations</h3>
+                                    <h5 class="light grey-text text-lighten-3">
+                                        <strong>
+                                            Gracias a Natsol, obtenemos la certificación tipo B sin complicaciones. Su
+                                            enfoque claro y personalizado hizo que el proceso fuera fácil de seguir.
+                                            Estamos agradecidos por su apoyo continuo.
+                                        </strong>
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/images/2.jpeg">
+                                <div class="caption left-align">
+                                    <h3>EcoPrint Solutions</h3>
+                                    <h5 class="light grey-text text-lighten-3">
+                                        <strong>
+                                            Natsol fue clave para obtener la certificación tipo B. Su asesoramiento
+                                            estratégico nos posicionó como empresa sostenible. Recomiendo sus servicios
+                                            sin dudar.
+                                        </strong>
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/images/3.jpeg">
+                                <div class="caption right-align">
+                                    <h3>BioFoods International</h3>
+                                    <h5 class="light grey-text text-lighten-3">
+                                        <strong>
+                                            Con la ayuda de Natsol, alcanzamos nuestros objetivos de sostenibilidad y
+                                            obtuvimos la certificación tipo B de manera eficaz. Su guía específica fue
+                                            invaluable.
+                                        </strong>
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/images/4.jpeg">
+                                <div class="caption center-align">
+                                    <h3>Renewable Energy Solutions</h3>
+                                    <h5 class="light grey-text text-lighten-3">
+                                        <strong>
+                                            Gracias a Natsol, obtuvimos la certificación tipo B sin complicaciones
+                                            innecesarias. Su compromiso con la sostenibilidad se refleja en cada paso
+                                            del camino. Estamos muy satisfechos con los resultados.
+                                        </strong>
+                                    </h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s6 m4 l4 lx4">
+                    <h5 class="white-text">Productos</h5>
+                    <ul>
+                        <li>Manuales</li>
+                        <li>Libros</li>
+                    </ul>
+                </div>
+                <div class="col s6 m4 l4 lx4">
+                    <h5 class="white-text">Servicios</h5>
+                    <ul>
+                        <li>Consultoria</li>
+                        <li>Conferencias</li>
+                    </ul>
+                </div>
+                <div class="col s6 m4 l4 lx4">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://chucky0017.github.io/natsol.github.io/Pagina-Natsol/"
+                                target="_blank">Natsol</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.facebook.com/profile.php?id=61552321147677&mibextid=zLoPMf"
+                                target="_blank">Facebook</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://instagram.com/natsol_01?igshid=M2RkZGJiMzhjOQ=="
+                                target="_blank">Instagram</a></li>
+                        <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2023 Natsol S.A.C. Todos los derechos reservados.
+                <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init("user_your_user_id");
+    </script>
+
+    <script type="module" src="scripts.js"></script>
+
+</body>
+
+</html>
