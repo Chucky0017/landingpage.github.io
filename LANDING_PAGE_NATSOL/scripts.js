@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('select').formSelect();
     $('.slider').slider();
 
-    emailjs.init('LHpmZkSOI9G6AM_bg');
+    emailjs.init('HB27QC27vArtxT4Dz');
 
     var formMsg = $('#formMsg');
 
